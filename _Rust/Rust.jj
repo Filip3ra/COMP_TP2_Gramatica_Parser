@@ -193,7 +193,7 @@ TOKEN:
 	| <CADEIA : <ASPASDUPLAS>
 	  (["a"-"z","A"-"Z","0"-"9"," ",":",";",".","!","=","^","@","#","$","%","&","*",")","(","{","}",">","<","[","]"])*<ASPASDUPLAS>>
 	| <CARACTERE : "'"["a"-"z","A"-"Z","0"-"9"]"'" >
-	| <IDENTIFICADOR : (["a"-"z","A"-"Z"]) (["a"-"z","A"-"Z","0"-"9","_"])*>
+	| <ID : (["a"-"z","A"-"Z"]) (["a"-"z","A"-"Z","0"-"9","_"])*>
 	
 }
 
@@ -267,17 +267,17 @@ void AnaliseLexica() :
 		| <KW_UNION>		{System.out.println("PALAVRAS RESERVADAS WEAK: union");}
 		| <KW_STATICLIFETIME>{System.out.println("PALAVRAS RESERVADAS WEAK: 'static");}
 
-		| <MAIS>			{System.out.println("PONTUACAO: +");}
-		| <MENOS>			{System.out.println("PONTUACAO: -");}
-		| <ESTRELA>			{System.out.println("PONTUACAO: *");}
-		| <BARRAINVERTIDA>	{System.out.println("PONTUACAO: /");}
-		| <PORCENTO>		{System.out.println("PONTUACAO: %");}
-		| <CHAPEU>			{System.out.println("PONTUACAO: ^");}
-		| <EXCLAMACAO>		{System.out.println("PONTUACAO: !");}
-		| <ECOMERCIAL>		{System.out.println("PONTUACAO: &");}
-		| <OU>				{System.out.println("PONTUACAO: |");}
-		| <ANDAND>			{System.out.println("PONTUACAO: &&");}
-		| <OUOU>			{System.out.println("PONTUACAO: ||");}
+		| <MAIS>			{System.out.println("MAIS +");}
+		| <MENOS>			{System.out.println("MENOS -");}
+		| <ESTRELA>			{System.out.println("ESTRELA *");}
+		| <BARRAINVERTIDA>	{System.out.println("BARRAINVERTIDA /");}
+		| <PORCENTO>		{System.out.println("PORCENTO %");}
+		| <CHAPEU>			{System.out.println("CHAPEU ^");}
+		| <EXCLAMACAO>		{System.out.println("EXCLAMACAO !");}
+		| <ECOMERCIAL>		{System.out.println("ECOMERCIAL &");}
+		| <OU>				{System.out.println("OU |");}
+		| <ANDAND>			{System.out.println("ANDAND &&");}
+		| <OUOU>			{System.out.println("OUOU ||");}
 		| <MENORMENOR>		{System.out.println("PONTUACAO: <<");}
 		| <MAIORMAIOR>		{System.out.println("PONTUACAO: >>");}
 		| <MAISIGUAL>		{System.out.println("PONTUACAO: +=");}
@@ -290,7 +290,7 @@ void AnaliseLexica() :
 		| <OUIGUAL>			{System.out.println("PONTUACAO: |=");}
 		| <MENORMENORIGUAL>	{System.out.println("PONTUACAO: <<=");}
 		| <MAIORMAIORIGUAL>	{System.out.println("PONTUACAO: >>=");}
-		| <IGUAL>			{System.out.println("PONTUACAO: =");}
+		| <IGUAL>			{System.out.println("IGUAL =");}
 		| <IGUALIGUAL>		{System.out.println("PONTUACAO: ==");}
 		| <DIFERENTE>		{System.out.println("PONTUACAO: !=");}
 		| <MAIORQUE>		{System.out.println("PONTUACAO: >");}
@@ -315,20 +315,20 @@ void AnaliseLexica() :
 		| <ASPASSIMPLES>	{System.out.println("PONTUACAO: \'");}
 		| <INTERROGACAO>	{System.out.println("PONTUACAO: ?");}
 
-		|	<ACHAVES>		{System.out.println("DELIMITADOR: {");}
-		|	<FCHAVES>		{System.out.println("DELIMITADOR: }");}
-		|	<APAREN> 		{System.out.println("DELIMITADOR: (");}
-		|	<FPAREN> 		{System.out.println("DELIMITADOR: )");}
-		|	<ACOLCHETE>		{System.out.println("DELIMITADOR: [");}
-		|	<FCOLCHETE>		{System.out.println("DELIMITADOR: ]");}
+		|	<ACHAVES>		{System.out.println("ACHAVES {");}
+		|	<FCHAVES>		{System.out.println("FCHAVES }");}
+		|	<APAREN> 		{System.out.println("APAREN (");}
+		|	<FPAREN> 		{System.out.println("FPAREN )");}
+		|	<ACOLCHETE>		{System.out.println("ACOLCHETE [");}
+		|	<FCOLCHETE>		{System.out.println("FCOLCHETE ]");}
 
 		| <BOOLEANO>		{System.out.println("BOLEANO: bool");}
-		| t=<NUM>			{System.out.println("NUMERICO: " + t.image);}
-		| t=<FLOAT>			{System.out.println("NUMERICO: " + t.image);}
-		| t=<CADEIA> 	    {System.out.println("TEXTUAL: " + t.image);}
+		| t=<NUM>			{System.out.println("NUM " + t.image);}
+		| t=<FLOAT>			{System.out.println("FLOAT " + t.image);}
+		| t=<CADEIA> 	    {System.out.println("CADEIA " + t.image);}
 		| t=<MACRO> 	    {System.out.println("MACRO: " + t.image);}
-		| t=<CARACTERE>     {System.out.println("TEXTUAL: " + t.image);}
-		| t=<IDENTIFICADOR>{System.out.println("IDENTIFICADOR: " + t.image);}
+		| t=<CARACTERE>     {System.out.println("CARACTERE " + t.image);}
+		| t=<ID>{System.out.println("ID " + t.image);}
 		
 	)*
 }

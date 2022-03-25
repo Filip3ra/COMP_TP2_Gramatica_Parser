@@ -235,7 +235,7 @@ public interface RustConstants {
   /** RegularExpression Id. */
   int CARACTERE = 113;
   /** RegularExpression Id. */
-  int IDENTIFICADOR = 114;
+  int ID = 114;
 
   /** Lexical state. */
   int DEFAULT = 0;
@@ -356,7 +356,7 @@ public interface RustConstants {
     "<FLOAT>",
     "<CADEIA>",
     "<CARACTERE>",
-    "<IDENTIFICADOR>",
+    "<ID>",
     "\" \"",
     "\"\\n\"",
     "\"\\r\"",

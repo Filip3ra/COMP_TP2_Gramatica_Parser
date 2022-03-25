@@ -124,7 +124,7 @@ class Rust implements RustConstants {
       case FLOAT:
       case CADEIA:
       case CARACTERE:
-      case IDENTIFICADOR:
+      case ID:
         ;
         break;
       default:
@@ -346,47 +346,47 @@ class Rust implements RustConstants {
         break;
       case MAIS:
         jj_consume_token(MAIS);
-                                                 System.out.println("PONTUACAO: +");
+                                                 System.out.println("MAIS +");
         break;
       case MENOS:
         jj_consume_token(MENOS);
-                                                 System.out.println("PONTUACAO: -");
+                                                 System.out.println("MENOS -");
         break;
       case ESTRELA:
         jj_consume_token(ESTRELA);
-                                                 System.out.println("PONTUACAO: *");
+                                                 System.out.println("ESTRELA *");
         break;
       case BARRAINVERTIDA:
         jj_consume_token(BARRAINVERTIDA);
-                                         System.out.println("PONTUACAO: /");
+                                         System.out.println("BARRAINVERTIDA /");
         break;
       case PORCENTO:
         jj_consume_token(PORCENTO);
-                                         System.out.println("PONTUACAO: %");
+                                         System.out.println("PORCENTO %");
         break;
       case CHAPEU:
         jj_consume_token(CHAPEU);
-                                                 System.out.println("PONTUACAO: ^");
+                                                 System.out.println("CHAPEU ^");
         break;
       case EXCLAMACAO:
         jj_consume_token(EXCLAMACAO);
-                                         System.out.println("PONTUACAO: !");
+                                         System.out.println("EXCLAMACAO !");
         break;
       case ECOMERCIAL:
         jj_consume_token(ECOMERCIAL);
-                                         System.out.println("PONTUACAO: &");
+                                         System.out.println("ECOMERCIAL &");
         break;
       case OU:
         jj_consume_token(OU);
-                                                 System.out.println("PONTUACAO: |");
+                                                 System.out.println("OU |");
         break;
       case ANDAND:
         jj_consume_token(ANDAND);
-                                                 System.out.println("PONTUACAO: &&");
+                                                 System.out.println("ANDAND &&");
         break;
       case OUOU:
         jj_consume_token(OUOU);
-                                                 System.out.println("PONTUACAO: ||");
+                                                 System.out.println("OUOU ||");
         break;
       case MENORMENOR:
         jj_consume_token(MENORMENOR);
@@ -438,7 +438,7 @@ class Rust implements RustConstants {
         break;
       case IGUAL:
         jj_consume_token(IGUAL);
-                                                 System.out.println("PONTUACAO: =");
+                                                 System.out.println("IGUAL =");
         break;
       case IGUALIGUAL:
         jj_consume_token(IGUALIGUAL);
@@ -534,27 +534,27 @@ class Rust implements RustConstants {
         break;
       case ACHAVES:
         jj_consume_token(ACHAVES);
-                                                 System.out.println("DELIMITADOR: {");
+                                                 System.out.println("ACHAVES {");
         break;
       case FCHAVES:
         jj_consume_token(FCHAVES);
-                                                 System.out.println("DELIMITADOR: }");
+                                                 System.out.println("FCHAVES }");
         break;
       case APAREN:
         jj_consume_token(APAREN);
-                                                 System.out.println("DELIMITADOR: (");
+                                                 System.out.println("APAREN (");
         break;
       case FPAREN:
         jj_consume_token(FPAREN);
-                                                 System.out.println("DELIMITADOR: )");
+                                                 System.out.println("FPAREN )");
         break;
       case ACOLCHETE:
         jj_consume_token(ACOLCHETE);
-                                                 System.out.println("DELIMITADOR: [");
+                                                 System.out.println("ACOLCHETE [");
         break;
       case FCOLCHETE:
         jj_consume_token(FCOLCHETE);
-                                                 System.out.println("DELIMITADOR: ]");
+                                                 System.out.println("FCOLCHETE ]");
         break;
       case BOOLEANO:
         jj_consume_token(BOOLEANO);
@@ -562,15 +562,15 @@ class Rust implements RustConstants {
         break;
       case NUM:
         t = jj_consume_token(NUM);
-                                                 System.out.println("NUMERICO: " + t.image);
+                                                 System.out.println("NUM " + t.image);
         break;
       case FLOAT:
         t = jj_consume_token(FLOAT);
-                                                 System.out.println("NUMERICO: " + t.image);
+                                                 System.out.println("FLOAT " + t.image);
         break;
       case CADEIA:
         t = jj_consume_token(CADEIA);
-                                     System.out.println("TEXTUAL: " + t.image);
+                                     System.out.println("CADEIA " + t.image);
         break;
       case MACRO:
         t = jj_consume_token(MACRO);
@@ -578,11 +578,11 @@ class Rust implements RustConstants {
         break;
       case CARACTERE:
         t = jj_consume_token(CARACTERE);
-                                     System.out.println("TEXTUAL: " + t.image);
+                                     System.out.println("CARACTERE " + t.image);
         break;
-      case IDENTIFICADOR:
-        t = jj_consume_token(IDENTIFICADOR);
-                                    System.out.println("IDENTIFICADOR: " + t.image);
+      case ID:
+        t = jj_consume_token(ID);
+                         System.out.println("ID " + t.image);
         break;
       default:
         jj_la1[1] = jj_gen;
