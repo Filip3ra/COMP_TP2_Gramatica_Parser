@@ -310,7 +310,7 @@ void AnaliseLexica() :
 		| <SETA>			{System.out.println("PONTUACAO: ->");}
 		| <SETAGORDA>		{System.out.println("PONTUACAO: =>");}
 		| <QUADRADO>		{System.out.println("PONTUACAO: #");}
-		| <CIFRAO>			{System.out.println("PONTUACAO: $");}
+		| <CIFRAO>			{System.out.println("CIFRAO $");}
 		| <ASPASDUPLAS>		{System.out.println("PONTUACAO: \"");}
 		| <ASPASSIMPLES>	{System.out.println("PONTUACAO: \'");}
 		| <INTERROGACAO>	{System.out.println("PONTUACAO: ?");}

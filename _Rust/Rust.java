@@ -518,7 +518,7 @@ class Rust implements RustConstants {
         break;
       case CIFRAO:
         jj_consume_token(CIFRAO);
-                                                 System.out.println("PONTUACAO: $");
+                                                 System.out.println("CIFRAO $");
         break;
       case ASPASDUPLAS:
         jj_consume_token(ASPASDUPLAS);
