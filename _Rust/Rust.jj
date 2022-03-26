@@ -328,7 +328,7 @@ void AnaliseLexica() :
 		| t=<CADEIA> 	    {System.out.println("CADEIA " + t.image);}
 		| t=<MACRO> 	    {System.out.println("MACRO: " + t.image);}
 		| t=<CARACTERE>     {System.out.println("CARACTERE " + t.image);}
-		| t=<ID>{System.out.println("ID " + t.image);}
+		| t=<ID>			{System.out.println("E " + t.image);}
 		
 	)*
 }
