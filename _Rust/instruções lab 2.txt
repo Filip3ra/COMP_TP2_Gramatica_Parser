@@ -1,0 +1,50 @@
+> Lab 1 gera uma saída que possui os 
+identificadores e os símbolos
+
+APAREN (
+ID a
+...
+
+ É interessante usar um arquivo inicial que tenha:
+ a + a * ( a + a )
+ pois é uma expressão que cobre operações iniciais.
+
+
+> Com isso eu gero minha gramática
+
+S -> ID
+ID -> ID + ID
+...
+
+> Agora basta acessar o LALR, colar a gramática e gerar.
+  
+  Devo copiar a tabela até o pnultimo quadro, não posso
+  selecionar até o último pois da pau quando for colar.
+
+  Agora abro a planilha, vou na aba tabela, colo o que
+  foi gerado no LALR, lembrando que tenho que copiar o
+  cabeçalho também.
+
+> Agora seleciono toda a coluna L e copio ela, preciso
+  remover todos os espaços em branco e são muitas linhas.
+
+  No terminal ubuntu, entro na pasta onde ta o arquivo
+  linhas-L.txt, executo o comando:
+
+  cat linhas-L.txt | sort -n | grep [0-9] > tabela_lr1.conf
+
+  que vai remover as linhas em branco e salvar no arquivo
+  tabela_lr1.conf.
+
+> Agora preciso organizar três arquivos:
+
+	> gramatica.conf
+	> tabela_lr1.conf
+	> 1.in (que é a entrada)
+
+
+
+
+
+
+

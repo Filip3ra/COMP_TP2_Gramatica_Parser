@@ -4,4 +4,4 @@ ID -> T
 T -> T * F
 T -> F
 F -> ( ID )
-F -> $
+F -> a

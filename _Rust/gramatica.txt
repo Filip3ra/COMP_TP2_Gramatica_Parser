@@ -1,7 +1,5 @@
 S -> ID
-ID -> ID + T
-ID -> T
-T -> T * F
-T -> F
-F -> a
-F -> ( ID )
+ID -> ID + ID
+ID -> ID * ID
+ID -> ( ID )
+ID -> a
