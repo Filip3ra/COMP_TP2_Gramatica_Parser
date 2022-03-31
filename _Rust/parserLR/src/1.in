@@ -1,10 +1,10 @@
+( (
 ID a
-MAIS +
++ +
 ID a
-ESTRELA *
-APAREN (
+) )
+* *
 ID a
-MAIS +
++ +
 ID a
-FPAREN )
-CIFRAO $
+$ $
