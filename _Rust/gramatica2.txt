@@ -1,7 +1,0 @@
-S -> ID
-ID -> ID + T
-ID -> T
-T -> T * F
-T -> F
-F -> ( ID )
-F -> $

@@ -36,11 +36,19 @@ ID -> ID + ID
   que vai remover as linhas em branco e salvar no arquivo
   tabela_lr1.conf.
 
-> Agora preciso organizar três arquivos:
+> Agora preciso organizar três arquivos dentro da pasta src.
 
 	> gramatica.conf
 	> tabela_lr1.conf
 	> 1.in (que é a entrada)
+
+> dentro da pasta src vou compilar
+
+	g++ *.cpp -o parser
+
+> depois é só executar 
+	
+	./parser < 1.in
 
 
 
