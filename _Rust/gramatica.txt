@@ -1,3 +1,30 @@
+
+
+
+entrada 
+fn main ( ID : int , ID : bool ) { ID + ID }
+
+
+S' -> BLC
+
+BLC -> fn main ( PAR ) { CD }
+BLC -> ID ( PAR ) { CD }
+
+CD -> INST
+CD -> ''
+
+PAR -> ID : TYPE PR
+PAR -> ''
+PR -> ''
+PR -> , PAR
+
+TYPE -> int
+TYPE -> char
+TYPE -> bool
+
+INST -> 
+
+-------------------------
 S -> E $
 E -> E opC T
 opC -> <
