@@ -1,3 +1,74 @@
+S -> E $
+E -> E opC T
+opC -> <
+opC -> <=
+opC -> >
+opC -> >=
+opC -> <>
+opC -> >
+opC -> !=
+opC -> ==
+E -> T
+T -> T opAum Y
+opAum -> +
+opAum -> -
+T -> Y
+Y -> Y opAdois X
+opAdois -> *
+opAdois -> /
+opAdois -> %
+opAdois -> ^
+Y -> X
+X -> X opL J
+opL -> ||
+opL -> &&
+opL -> !
+opL -> =
+X -> J
+J -> F
+F -> ID
+F -> NUM
+F -> { E }
+F -> ( E )
+
+
+
+
+old
+
+S' -> E
+E -> E opA T
+opA -> <
+opA -> <=
+opA -> >
+opA -> >=
+opA -> <>
+opA -> >
+opA -> !=
+opA -> ==
+E -> T
+T -> T opB Y
+opB -> +
+opB -> -
+opB -> ||
+T -> Y
+Y -> Y opC F
+opC -> *
+opC -> /
+opC -> %
+opC -> ^
+opA -> &&
+Y -> F
+F -> ID
+F -> ! F
+F -> ( E )
+
+
+
+
+
+old
+
 S -> ID
 ID -> ID + T
 ID -> ID - T
@@ -7,5 +78,3 @@ T -> T / F
 T -> F
 F -> ( ID )
 F -> $
-
-
