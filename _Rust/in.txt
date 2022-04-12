@@ -1,3 +1,108 @@
+fn main ( ) { 
+	if ID ( NUM ) { 
+	let ID = ID ; 
+	} 
+	let ID ; 
+	let ID = ID ; 
+	let ID : [ int ; NUM ] = [ NUM , NUM ] ; 
+} 
+
+fn ID ( ID : int ) { 
+	while ( ! ( ID + ID ) || ( ID == ID ) ) { 
+	} 
+	return ID + ID ; 
+} 
+fn ID ( ID : i8 , ID : f32 ) { 
+	let ID ; 
+	ID ( NUM ) ; 
+	ID ( ID ) ; ID [ NUM ] 
+} 
+fn ID ( ID : i8 , ID : f32 ) { 
+	ID ( ID + ID , NUM - NUM ) ; 
+	if ( ! NUM ) { 
+	} else if ( ID > ID && NUM ) { 
+	} else { 
+	} 
+	let ID : [ int ; NUM ] = [ NUM , NUM , NUM , NUM ] ; 
+}
+
+
+
+
+
+fn main ( ) { 
+	if ID ( ID : char ) {
+	 let ID = ID ; 
+	} 
+	let ID ; 
+	let ID = ID ; 
+	let ID : [ int ; NUM ] = [ NUM , NUM ] ; 
+} 
+
+fn ID ( ID : int ) { 
+	while ( ! ( ID + ID ) || ( ID == ID ) ) { 
+	} 
+	return ID + ID ; 
+} 
+
+fn ID ( ID : i8 , ID : f32 ) { 
+	let ID ; 
+	ID ( ID : int ) ; 
+	ID ( ID : int ) ; 
+	ID [ NUM ] 
+} 
+fn ID ( ID : i8 , ID : f32 ) { 
+	ID ( ID + ID , NUM - NUM ) ; 
+	if ( ! NUM ) { 
+	} else if ( ID > ID && NUM ) { 
+	} else { 
+	} 
+	let ID : [ int ; NUM ] = [ NUM , NUM , NUM , NUM ] ;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+-----------------------------
+fn main ( ) { 
+	if ID ( ID : char ) { 
+	let ID = ID ; 
+	} 
+	let ID ; 
+	let ID = ID ;
+	let ID : [ int ; NUM ] = [ NUM , NUM ] ;
+} 
+
+fn ID ( ID : int ) { 
+	while ( ! ( ID + ID ) || ( ID == ID ) ) {
+	}
+	return ID + ID ;
+}
+
+fn ID ( ID : int , ID : char ) {
+	let ID ; 
+	ID ( ID : int ) ;
+
+	ID * ID == ID ( ID : int ) ;
+}
+
+-----------
+fn main ( ) { if ID ( ID : char ) { let ID = ID ; } let ID ; let ID = ID ; let ID : [ int ; NUM ] = [ NUM , NUM ] ; } fn ID ( ID : int ) { while ( ! ( ID + ID ) || ( ID == ID ) ) { } return ID + ID ; } fn ID ( ID : int , ID : char ) { let ID ; ID ( ID : int ) ; ID * ID == NUM }
+
+
+--------------------------
+
 fn fn
 main main
 ( (

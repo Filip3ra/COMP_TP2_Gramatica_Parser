@@ -1,9 +1,11 @@
-fn fn
 main main
 ( (
-PAR PAR
+a a
++ +
+a a
 ) )
-{ {
-CD CD
-} }
+* *
+a a
++ +
+a a
 $ $
