@@ -1,3 +1,268 @@
+entrada
+fn main ( ) { if ID ( ID : char ) { let ID = ID ; } let ID ; let ID = ID ; } fn ID ( ID : int ) { while ( ! ( ID + ID ) || ( ID == ID ) ) { } }
+
+
+
+
+S' -> BLC_MAIN 
+
+BLC_MAIN -> fn main ( PAR ) { CD } BLC
+BLC -> fn ID ( PAR ) { CD } BLC
+BLC -> ''
+
+PAR -> ID : TIPO PR
+PAR -> ''
+PR -> ''
+PR -> , PAR
+
+TIPO -> int
+TIPO -> char
+TIPO -> bool
+
+CD -> INST
+CD -> ''
+
+INST -> INST_IF
+INST -> INST_WL
+INST -> INST_VAR
+
+INST_IF -> if EXP { CD } IN
+INST_IF -> if ID ( PAR ) { CD } IN
+IN -> else if ID ( PAR ) { CD } IN
+IN -> else if EXP { CD } IN
+IN -> else { CD } IN
+IN -> ''
+IN -> INST
+
+INST_WL -> while ( EXP ) { CD } R
+R -> ''
+R -> INST
+
+INST_VAR -> let ID ; IV
+INST_VAR -> let ID = ID ; IV
+INST_VAR -> let ID = NUM ; IV
+IV -> ''
+IV -> INST
+
+EXP -> EXP opC T
+opC -> <
+opC -> <=
+opC -> >
+opC -> >=
+opC -> <>
+opC -> >
+opC -> !=
+opC -> ==
+
+EXP -> T
+T -> T opAum Y
+opAum -> +
+opAum -> -
+
+T -> Y
+Y -> Y opAdois X
+opAdois -> *
+opAdois -> /
+opAdois -> %
+opAdois -> ^
+
+Y -> X
+X -> X opL J
+opL -> ||
+opL -> &&
+
+X -> J
+J -> ! F
+J -> F
+
+F -> ID
+F -> VAR
+F -> NUM
+F -> ( EXP )
+
+
+
+
+---------------------------------------------------
+
+S' -> BLC_MAIN 
+
+BLC_MAIN -> fn main ( PAR ) { CD } BLC
+BLC -> fn ID ( PAR ) { CD } BLC
+BLC -> ''
+
+PAR -> ID : TIPO PR
+PAR -> ''
+PR -> ''
+PR -> , PAR
+
+TIPO -> int
+TIPO -> char
+TIPO -> bool
+
+CD -> INST
+CD -> ''
+
+INST -> INST_IF
+INST -> INST_WL
+
+INST_IF -> if EXP { CD } IN
+INST_IF -> if ID ( PAR ) { CD } IN
+IN -> else if ID ( PAR ) { CD } IN
+IN -> else if EXP { CD } IN
+IN -> else { CD } IN
+IN -> ''
+IN -> INST
+
+INST_WL -> while ( EXP ) { CD } R
+R -> ''
+R -> INST
+
+EXP -> EXP opC T
+opC -> <
+opC -> <=
+opC -> >
+opC -> >=
+opC -> <>
+opC -> >
+opC -> !=
+opC -> ==
+
+EXP -> T
+T -> T opAum Y
+opAum -> +
+opAum -> -
+
+T -> Y
+Y -> Y opAdois X
+opAdois -> *
+opAdois -> /
+opAdois -> %
+opAdois -> ^
+
+Y -> X
+X -> X opL J
+opL -> ||
+opL -> &&
+opL -> =
+
+X -> J
+J -> ! F
+J -> F
+
+F -> ID
+F -> VAR
+F -> NUM
+F -> ( EXP )
+
+
+
+
+----------------------------------------------------------
+
+S' -> BLC_MAIN 
+
+BLC_MAIN -> fn main ( PAR ) { CD } BLC
+BLC -> fn ID ( PAR ) { CD } BLC
+BLC -> ''
+
+PAR -> ID : TIPO PR
+PAR -> ''
+PR -> ''
+PR -> , PAR
+
+TIPO -> int
+TIPO -> char
+TIPO -> bool
+
+CD -> INST
+CD -> ''
+
+INST -> INST_IF
+INST -> INST_WL
+
+INST_IF -> if EXP { CD } IN
+INST_IF -> if ID ( par ) { code } IN
+IN -> else if ID ( par ) { code } IN
+IN -> else if EXP { code } IN
+IN -> else { code } IN
+IN -> ''
+IN -> INST
+
+INST_WL -> while ( EXP ) { code } R
+R -> ''
+R -> INST
+
+
+
+---------------------------------------
+
+S' -> BLC
+
+BLC -> fn main ( PAR ) { CD } BLC
+BLC -> fn ID ( PAR ) { CD } BLC
+BLC -> ''
+
+
+
+CD -> INST
+CD -> ''
+
+PAR -> ID : TIPO PR
+PAR -> ''
+PR -> ''
+PR -> , PAR
+
+TIPO -> int
+TIPO -> char
+TIPO -> bool
+
+INST -> if EXP { CD } IN
+INST -> if ID ( PAR ) { CD } IN
+IN -> else if ID ( PAR ) { CD } IN
+IN -> else if EXP { CD } IN
+IN -> else { CD } IN
+IN -> ''
+
+INST -> while ( EXP ) { CD }
+
+INST -> EXP
+EXP -> EXP opC T
+
+opC -> <
+opC -> <=
+opC -> >
+opC -> >=
+opC -> <>
+opC -> >
+opC -> !=
+opC -> ==
+
+EXP -> T
+T -> T opAum Y
+opAum -> +
+opAum -> -
+T -> Y
+Y -> Y opAdois X
+opAdois -> *
+opAdois -> /
+opAdois -> %
+opAdois -> ^
+Y -> X
+X -> X opL F
+opL -> ||
+opL -> &&
+opL -> !
+opL -> =
+
+X -> F
+F -> ID
+F -> NUM
+F -> { EXP }
+F -> ( EXP )
+
+
+-----------------------
 
 
 entrada
