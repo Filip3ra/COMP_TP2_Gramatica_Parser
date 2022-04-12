@@ -217,13 +217,13 @@ void AnaliseLexica() :
 		| <KW_CONST>		{System.out.println("PALAVRAS RESERVADAS STRICT: const");}
 		| <KW_CONTINUE>		{System.out.println("PALAVRAS RESERVADAS STRICT: continue");}
 		| <KW_CRATE>		{System.out.println("PALAVRAS RESERVADAS STRICT: crate");}
-		| <KW_ELSE>			{System.out.println("PALAVRAS RESERVADAS STRICT: else");}
+		| <KW_ELSE>			{System.out.println("KW_ELSE else");}
 		| <KW_ENUM> 		{System.out.println("PALAVRAS RESERVADAS STRICT: enum");}
 		| <KW_EXTERN> 		{System.out.println("PALAVRAS RESERVADAS STRICT: extern");}
 		| <KW_FALSE>		{System.out.println("PALAVRAS RESERVADAS STRICT: false");}
-		| <KW_FN> 			{System.out.println("PALAVRAS RESERVADAS STRICT: fn");}
+		| <KW_FN> 			{System.out.println("fn fn");}
 		| <KW_FOR>			{System.out.println("PALAVRAS RESERVADAS STRICT: for");}
-		| <KW_IF>			{System.out.println("PALAVRAS RESERVADAS STRICT: if");}
+		| <KW_IF>			{System.out.println("if if");}
 		| <KW_IMPL>			{System.out.println("PALAVRAS RESERVADAS STRICT: impl");}
 		| <KW_IN>			{System.out.println("PALAVRAS RESERVADAS STRICT: in");}
 		| <KW_LET>			{System.out.println("PALAVRAS RESERVADAS STRICT: let");}
