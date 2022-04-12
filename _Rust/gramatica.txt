@@ -1,5 +1,53 @@
+S' -> BLC
 
+BLC -> fn main ( PAR ) { CD }
+BLC -> ID ( PAR ) { CD }
 
+CD -> INST
+CD -> ''
+
+PAR -> ID : TIPO PR
+PAR -> ''
+PR -> ''
+PR -> , PAR
+
+TIPO -> int
+TIPO -> char
+TIPO -> bool
+
+INST -> E
+E -> E opC T
+opC -> <
+opC -> <=
+opC -> >
+opC -> >=
+opC -> <>
+opC -> >
+opC -> !=
+opC -> ==
+E -> T
+T -> T opAum Y
+opAum -> +
+opAum -> -
+T -> Y
+Y -> Y opAdois X
+opAdois -> *
+opAdois -> /
+opAdois -> %
+opAdois -> ^
+Y -> X
+X -> X opL J
+opL -> ||
+opL -> &&
+opL -> !
+opL -> =
+X -> J
+J -> F
+F -> ID
+F -> NUM
+F -> { E }
+F -> ( E )
+-------------------------
 
 entrada 
 fn main ( ID : int , ID : bool ) { ID + ID }
