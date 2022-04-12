@@ -1,3 +1,324 @@
+
+
+entrada
+fn main ( ID : int ) { if ( ( ID >= ID ) + ( ID > ID ) ) { ID = ID } else if ID ( ID : int ) { } else { ID } } fn ID ( ID : bool , ID : char ) { ID % ID == NUM }
+
+S' -> BLC
+
+BLC -> fn main ( PAR ) { CD } BLC
+BLC -> fn ID ( PAR ) { CD } BLC
+BLC -> ''
+
+CD -> INST
+CD -> ''
+
+PAR -> ID : TIPO PR
+PAR -> ''
+PR -> ''
+PR -> , PAR
+
+TIPO -> int
+TIPO -> char
+TIPO -> bool
+
+INST -> if EXP { CD } IN
+INST -> if ID ( PAR ) { CD } IN
+IN -> else if ID ( PAR ) { CD } IN
+IN -> else if EXP { CD } IN
+IN -> else { CD } IN
+IN -> ''
+
+INST -> EXP
+EXP -> EXP opC T
+
+opC -> <
+opC -> <=
+opC -> >
+opC -> >=
+opC -> <>
+opC -> >
+opC -> !=
+opC -> ==
+
+EXP -> T
+T -> T opAum Y
+opAum -> +
+opAum -> -
+T -> Y
+Y -> Y opAdois X
+opAdois -> *
+opAdois -> /
+opAdois -> %
+opAdois -> ^
+Y -> X
+X -> X opL F
+opL -> ||
+opL -> &&
+opL -> !
+opL -> =
+
+X -> F
+F -> ID
+F -> NUM
+F -> { EXP }
+F -> ( EXP )
+
+
+
+
+--------------
+entrada
+fn main ( ID : int ) { if ( ( ID >= ID ) + ( ID > ID ) ) { ID = ID } else if ID ( ID : int ) { } else { } } fn ID ( ID : bool , ID : char ) { ID % ID == NUM }
+
+S' -> BLC
+
+BLC -> fn main ( PAR ) { CD } BLC
+BLC -> fn ID ( PAR ) { CD } BLC
+BLC -> ''
+
+CD -> INST
+CD -> ''
+
+PAR -> ID : TIPO PR
+PAR -> ''
+PR -> ''
+PR -> , PAR
+
+TIPO -> int
+TIPO -> char
+TIPO -> bool
+
+INST -> if EXP { CD } IN
+INST -> if ID ( PAR ) { CD } IN
+IN -> else if ID ( PAR ) { CD } IN
+IN -> else if EXP { CD } IN
+IN -> else { CD }
+IN -> ''
+INST -> EXP
+EXP -> EXP opC T
+
+opC -> <
+opC -> <=
+opC -> >
+opC -> >=
+opC -> <>
+opC -> >
+opC -> !=
+opC -> ==
+
+EXP -> T
+T -> T opAum Y
+opAum -> +
+opAum -> -
+T -> Y
+Y -> Y opAdois X
+opAdois -> *
+opAdois -> /
+opAdois -> %
+opAdois -> ^
+Y -> X
+X -> X opL F
+opL -> ||
+opL -> &&
+opL -> !
+opL -> =
+
+X -> F
+F -> ID
+F -> NUM
+F -> { EXP }
+F -> ( EXP )
+
+
+------------------------
+
+entrada
+fn main ( ID : int ) { if ( ( ID >= ID ) + ( ID > ID ) ) { ID = ID } } fn ID ( ID : bool , ID : char ) { ID % ID == NUM }
+
+S' -> BLC
+
+BLC -> fn main ( PAR ) { CD } BLC
+BLC -> fn ID ( PAR ) { CD } BLC
+BLC -> ''
+
+CD -> INST
+CD -> ''
+
+PAR -> ID : TIPO PR
+PAR -> ''
+PR -> ''
+PR -> , PAR
+
+TIPO -> int
+TIPO -> char
+TIPO -> bool
+
+INST -> if EXP { CD }
+INST -> EXP
+EXP -> EXP opC T
+
+opC -> <
+opC -> <=
+opC -> >
+opC -> >=
+opC -> <>
+opC -> >
+opC -> !=
+opC -> ==
+
+EXP -> T
+T -> T opAum Y
+opAum -> +
+opAum -> -
+T -> Y
+Y -> Y opAdois X
+opAdois -> *
+opAdois -> /
+opAdois -> %
+opAdois -> ^
+Y -> X
+X -> X opL F
+opL -> ||
+opL -> &&
+opL -> !
+opL -> =
+
+X -> F
+F -> ID
+F -> NUM
+F -> { EXP }
+F -> ( EXP )
+
+
+-----------------
+
+entrada
+fn main ( ID : int ) { if ( ( ID >= ID ) + ( ID > ID ) ) { ID = ID ; } }
+
+
+S' -> BLC
+
+BLC -> fn main ( PAR ) { CD }
+BLC -> fn ID ( PAR ) { CD }
+
+CD -> INST
+CD -> ''
+
+PAR -> ID : TIPO PR
+PAR -> ''
+PR -> ''
+PR -> , PAR
+
+TIPO -> int
+TIPO -> char
+TIPO -> bool
+
+INST -> if EXP { CD }
+INST -> EXP
+EXP -> EXP opC T
+
+opC -> <
+opC -> <=
+opC -> >
+opC -> >=
+opC -> <>
+opC -> >
+opC -> !=
+opC -> ==
+
+EXP -> T
+T -> T opAum Y
+opAum -> +
+opAum -> -
+T -> Y
+Y -> Y opAdois X
+opAdois -> *
+opAdois -> /
+opAdois -> %
+opAdois -> ^
+Y -> X
+X -> X opL J
+opL -> ||
+opL -> &&
+opL -> !
+opL -> =
+
+X -> J
+J -> F
+F -> ID FIM
+F -> NUM FIM
+F -> { EXP }
+F -> ( EXP )
+FIM -> ;
+FIM -> ''
+
+
+
+-----------------
+
+entrada 
+fn main ( ID : int ) { if ( ( ID >= ID ) + ( ID > ID ) ) { } }
+
+S' -> BLC
+
+BLC -> fn main ( PAR ) { CD }
+BLC -> fn ID ( PAR ) { CD }
+
+CD -> INST
+CD -> ''
+
+PAR -> ID : TIPO PR
+PAR -> ''
+PR -> ''
+PR -> , PAR
+
+TIPO -> int
+TIPO -> char
+TIPO -> bool
+
+INST -> if ( EXP ) { CD }
+
+EXP -> EXP opC T EX
+EXP -> ''
+EX -> ''
+EX -> opL EXP
+
+opC -> <
+opC -> <=
+opC -> >
+opC -> >=
+opC -> <>
+opC -> >
+opC -> !=
+opC -> ==
+
+EXP -> T
+T -> T opAum Y
+opAum -> +
+opAum -> -
+T -> Y
+Y -> Y opAdois X
+opAdois -> *
+opAdois -> /
+opAdois -> %
+opAdois -> ^
+Y -> X
+X -> X opL J
+opL -> ||
+opL -> &&
+opL -> !
+opL -> =
+
+X -> J
+J -> F
+F -> ID
+F -> NUM
+F -> { EXP }
+F -> ( EXP )
+
+
+
+---------------------------------
 S' -> BLC
 
 BLC -> fn main ( PAR ) { CD }
