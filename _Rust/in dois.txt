@@ -1,0 +1,178 @@
+fn main ( ) { 
+	if ID ( ID : char ) { 
+	let ID = ID ; 
+	} 
+	let ID ; 
+	let ID = ID ; 
+} 
+
+fn ID ( ID : int , ID : int ) { 
+	while ( ! ( ID + ID ) || ( ID == ID ) ) {
+	} 
+	if ( ID > ID ) {
+	}
+	else if ( ID < ID ) {
+	}
+	else {
+	}
+}
+
+--------------------------------------------------------
+
+fn fn
+main main 
+( (
+) )
+{ {
+if if 
+ID a
+( (
+ID b
+: :
+char char 
+) )
+{ {
+let let 
+ID c
+= =
+ID d
+; ;	
+} }
+let let 
+ID aa
+; ;
+let let 
+ID bb
+= =
+ID cc
+; ;
+} }
+fn fn 
+ID dd
+( (
+ID ee
+: :
+int int 
+, ,
+ID ff
+: :
+int int
+) )
+{ {
+while while
+( (
+! !
+( (
+ID gg
++ +
+ID hh
+) )
+|| ||
+( (
+ID ii
+== ==
+ID jj
+) )
+) )
+{ {
+} }
+if if 
+( (
+ID gg
+> >
+ID hh
+) )
+{ {
+} }	
+else else 
+if if 
+( (
+ID oo
+< <
+ID pp
+) )
+{ {
+} }
+else else 
+{ {
+} }
+} }
+---------------------------------------------------------
+KW_FN fn
+KW_MAIN main 
+( (
+) )
+{ {
+KW_IF if 
+ID a
+( (
+ID b
+: :
+KW_CHAR char 
+) )
+{ {
+KW_LET let 
+ID c
+= =
+ID d
+; ;	
+} }
+KW_LET let 
+ID aa
+; ;
+KW_LET let 
+ID bb
+= =
+ID cc
+; ;
+} }
+KW_FN fn 
+ID dd
+( (
+ID ee
+: :
+KW_INT int 
+, ,
+ID ff
+: :
+KW_INT int
+) )
+{ {
+KW_WHILE while 
+( (
+! !
+( (
+ID gg
++ +
+ID hh
+) )
+|| ||
+( (
+ID ii
+== ==
+ID jj
+) )
+) )
+{ {
+} }
+KW_IF if 
+( (
+ID gg
+> >
+ID hh
+) )
+{ {
+} }	
+KW_ELSE else 
+KW_IF if 
+( (
+ID oo
+< <
+ID pp
+) )
+{ {
+} }
+KW_ELSE else 
+{ {
+} }
+} }
