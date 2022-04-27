@@ -1,0 +1,39 @@
+fn main ( ) { if ID ( NUM ) { let ID = ID ; } let ID ; let ID = ID ; let ID : [ int ; NUM ] = [ NUM , NUM ] ; } fn ID ( ID : int ) { while ( ! ( ID + ID ) || ( ID == ID ) ) { } return ID + ID ; } fn ID ( ID : i8 , ID : f32 ) { let ID ; ID ( NUM ) ; ID ( ID ) ; ID [ NUM ] } fn ID ( ID : i8 , ID : f32 ) { ID ( ID + ID , NUM - NUM ) ; if ( ! NUM ) { } else if ( ID > ID && NUM ) { } else { } let ID : [ int ; NUM ] = [ NUM , NUM , NUM , NUM ] ; }
+
+fn main ( ) { if ID ( NUM ) { let ID = ID ; ID = NUM * NUM + NUM ^ NUM } let ID ; let ID = ID ; let ID : [ int ; NUM ] = [ NUM , NUM ] ; }
+
+fn main ( ) { if ID ( ! ( NUM ) ) { let ID = ID ; ID = NUM * NUM + NUM ^ NUM ; } else if ( ID || ID && ID ) { let ID : [ i8 ; NUM ] = [ NUM , NUM ] ; } else { } } fn ID ( ID : bool , ID : f32 ) { while ( NUM > NUM ) { ID ( NUM ) ; ID ( ID , NUM ) ; } } fn ID ( ID : char ) { if ( NUM >= NUM ) { return ID ; } ID = ID + NUM }
+
+fn main ( ) { if ID ( ! ( NUM ) ) { let ID = ID ; ID = NUM * NUM + NUM ^ NUM ; } else if ( ID || ID && ID ) { let ID : [ i8 ; NUM ] = [ NUM , NUM ] ; } else { } } fn ID ( ID : bool , ID : f32 ) { while ( NUM > NUM ) { ID ( NUM ) ; ID ( ID , NUM ) ; } } fn ID ( ID : char ) { if ( NUM >= NUM ) { return ID ; } else { let ID : [ i16 ; ID ] = [ NUM , NUM , NUM , NUM ] ; ID [ NUM ] ; } ID = ID + NUM }
+
+------------------------------
+
+fn main ( ) { 
+	if ID ( ! ( NUM ) ) { 
+		let ID = ID ; 
+		ID = NUM * NUM + NUM ^ NUM ; 
+	} 
+	else if ( ID || ID && ID ) { 
+		let ID : [ i8 ; NUM ] = [ NUM , NUM ] ; 
+	} 
+	else { } 
+} 
+
+fn ID ( ID : bool , ID : f32 ) { 
+	while ( NUM > NUM ) {
+		ID ( NUM ) ; 
+		ID ( ID , NUM ) ; 
+	} 
+} 
+
+fn ID ( ID : char ) { 
+	if ( NUM >= NUM ) { 
+		return ID ; 
+	} 
+	else { 
+		let ID : [ i16 ; ID ] = [ NUM , NUM , NUM , NUM ] ; 
+		ID [ NUM ] ; 
+	} 
+	ID = ID + NUM 
+}
+
